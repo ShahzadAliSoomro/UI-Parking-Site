@@ -86,7 +86,7 @@ export default function Navbar() {
               <div>
                 <TbMessageDots className="text-black w-6 h-6" />
               </div>
-              <div className="w-[139px] h-[48px] bg-[#EF2C2E] rounded-lg flex justify-center text-white">
+              <div className="w-[139px] h-[40px] bg-[#EF2C2E] rounded-lg flex justify-center text-white">
                 <button>Login</button>
               </div>
             </div>
