@@ -18,10 +18,10 @@ export default function Navbar() {
     };
   return (
     <div className="w-full bg-white shadow-lg">
-      <nav className="container mx-auto">
+      <nav className="container mx-auto w-full lg:w-[1160px]">
        
 
-        <div className="flex items-center justify-between p-5">
+        <div className="flex justify-between p-5">
             
           <div>
             <Image
@@ -59,7 +59,7 @@ export default function Navbar() {
                 </select>
               </div>
               <div>Nexs & Guides</div>
-              <div className="w-[82px] h-[40px] bg-[#EF2C2E] rounded-lg flex justify-center text-white">
+              <div className="w-[82px] h-[40px] bg-secondary rounded-lg flex justify-center text-[#ffffff]">
                 <button>Sell</button>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function Navbar() {
               <div>
                 <TbMessageDots className="text-black w-6 h-6" />
               </div>
-              <div className="w-[139px] h-[40px] bg-[#EF2C2E] rounded-lg flex justify-center text-white">
+              <div className="w-[139px] h-[40px] bg-primary rounded-lg flex justify-center text-[#ffffff]">
                 <button>Login</button>
               </div>
             </div>

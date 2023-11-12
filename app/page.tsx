@@ -1,14 +1,12 @@
-import Image from 'next/image'
-import Navbar from './components/Navbar'
 import HeroSec from './components/HeroSec'
-import Footer from './components/Footer'
+import Tabs from './components/Tabs'
 
 export default function Home() {
   return (
-    <main className="w-full">
-      <Navbar />
+    <main className="w-full relative">
+      
       <HeroSec />
-      <Footer />
+      <Tabs />
     </main>
   )
 }
