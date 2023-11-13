@@ -107,7 +107,69 @@ export default function ProductCard() {
                   height={500}
                 />
               </div>
-            
+            <div className="flex flex-col gap-5 p-2">
+              <div className="flex justify-between items-center">
+                <div className="text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">Volkswagen Polo 1.2 TDI</div>
+                <p className="text-[#444] text-sm pl-10">Date Published: 12/10/2023</p>
+              </div>
+              <div className="flex flex-col">
+                 <div className="flex gap-5">
+              <p className="mb-2 text-xl font-bold text-secondary text-neutral-500 dark:text-neutral-300">
+                  20,300 €
+                </p>
+                <del>20,300 €</del>
+              </div>
+              <p className="text-[#444] text-sm ">+ Omregistrering</p>
+              </div>
+             <div className="flex flex-col gap-3">
+             <div className="flex gap-7">
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-col">
+                   <p className="text-[#444] text-xs">Vehicle type</p>
+              <p className="text-[#444] font-bold text-base">Sedan</p>
+                </div>
+                <div className="flex flex-col">
+              <p className="text-[#444] text-xs">HP/kW</p>
+              <p className="text-[#444] font-bold text-base">55/75</p>
+              </div>
+              </div>
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-col">
+              <p className="text-[#444] text-xs">Gearbox type</p>
+              <p className="text-[#444] font-bold text-base">Auto</p>
+              </div>
+              <div className="flex flex-col">
+              <p className="text-[#444] text-xs">Doors number</p>
+              <p className="text-[#444] font-bold text-base">4</p>
+              </div>
+              </div>
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-col">
+              <p className="text-[#444] text-xs">Kilometers</p>
+              <p className="text-[#444] font-bold text-base">150,000 km</p>
+              </div>
+              <div className="flex flex-col">
+              <p className="text-[#444] text-xs">cm3</p>
+              <p className="text-[#444] font-bold text-base">2000</p>
+              </div>
+              </div>
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-col">
+              <p className="text-[#444] text-xs">Manufacture year</p>
+              <p className="text-[#444] font-bold text-base">2019</p>
+              </div>
+              <div className="flex flex-col">
+              <p className="text-[#444] text-xs">Fuel type</p>
+              <p className="text-[#444] font-bold text-base">Diesel</p>
+              </div>
+              </div>
+              
+
+             </div>
+             
+             </div>
+              
+            </div>
           </div>
         </div>
         </div>
