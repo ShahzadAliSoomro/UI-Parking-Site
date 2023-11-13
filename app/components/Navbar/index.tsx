@@ -28,8 +28,8 @@ export default function Navbar() {
             <Image
               src="/assest/logo.png"
               alt="logo"
-              width={100}
-              height={100}
+              width={500}
+              height={500}
               className="object-cover w-[143.607px] h-[80px]"
             />
           </div>
