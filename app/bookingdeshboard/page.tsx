@@ -1,5 +1,6 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
+import ProductCard from '../components/ProductCard'
 
 export default function BookingDeshboard() {
   return (
@@ -29,7 +30,7 @@ export default function BookingDeshboard() {
                     <div className=''><Sidebar/></div>
                 </div>
                 <div className='w-full lg:w-[866px] border-2 border-[#EBEBEB] rounded-[8px]'>
-                    <div className='w-10'>hellosdlksdflviasfkvcxaILSFVASF</div>
+                    <div className=''><ProductCard/></div>
                 </div>
             </div>
         </div>
