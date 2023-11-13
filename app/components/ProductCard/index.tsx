@@ -40,6 +40,159 @@ const FirstCard = [
   },
 ];
 
+const SecondCard = [
+  {
+    id: 1,
+    src: "/assest/s2.png",
+    title: "Volkswagen Polo 1.2 TDI ",
+    date: "Date Published: 12/10/2023",
+    price: "20,300 €",
+    discount: "20,300 €",
+    text: "+ Omregistrering",
+    vehicle: "Vehicle type",
+    vehicletype: "Sedan",
+    kw: "HP/kW",
+    kwvalue: "55/75",
+    gearbox: "Gearbox type",
+    gearboxtype: "Auto",
+    door: "Doors number",
+    doornumber: "4",
+    metertype: "kilometers",
+    meter: "185 000 km",
+    cm3: "cm3",
+    cm3value: "2000",
+    manufacturer: "Manufacturer year",
+    manuyear: "2019",
+    fueltype: "Fuel type",
+    fuel: "Diesel",
+  },
+  {
+    id: 2,
+    src: "/assest/s2.png",
+    title: "Volkswagen Polo 1.2 TDI ",
+    date: "Date Published: 12/10/2023",
+    price: "20,300 €",
+    discount: "20,300 €",
+    text: "+ Omregistrering",
+    vehicle: "Vehicle type",
+    vehicletype: "Sedan",
+    kw: "HP/kW",
+    kwvalue: "55/75",
+    gearbox: "Gearbox type",
+    gearboxtype: "Auto",
+    door: "Doors number",
+    doornumber: "4",
+    metertype: "kilometers",
+    meter: "185 000 km",
+    cm3: "cm3",
+    cm3value: "2000",
+    manufacturer: "Manufacturer year",
+    manuyear: "2019",
+    fueltype: "Fuel type",
+    fuel: "Diesel",
+  },
+  {
+    id: 3,
+    src: "/assest/s2.png",
+    title: "Volkswagen Polo 1.2 TDI ",
+    date: "Date Published: 12/10/2023",
+    price: "20,300 €",
+    discount: "20,300 €",
+    text: "+ Omregistrering",
+    vehicle: "Vehicle type",
+    vehicletype: "Sedan",
+    kw: "HP/kW",
+    kwvalue: "55/75",
+    gearbox: "Gearbox type",
+    gearboxtype: "Auto",
+    door: "Doors number",
+    doornumber: "4",
+    metertype: "kilometers",
+    meter: "185 000 km",
+    cm3: "cm3",
+    cm3value: "2000",
+    manufacturer: "Manufacturer year",
+    manuyear: "2019",
+    fueltype: "Fuel type",
+    fuel: "Diesel",
+  },
+  {
+    id: 4,
+    src: "/assest/s2.png",
+    title: "Volkswagen Polo 1.2 TDI ",
+    date: "Date Published: 12/10/2023",
+    price: "20,300 €",
+    discount: "20,300 €",
+    text: "+ Omregistrering",
+    vehicle: "Vehicle type",
+    vehicletype: "Sedan",
+    kw: "HP/kW",
+    kwvalue: "55/75",
+    gearbox: "Gearbox type",
+    gearboxtype: "Auto",
+    door: "Doors number",
+    doornumber: "4",
+    metertype: "kilometers",
+    meter: "185 000 km",
+    cm3: "cm3",
+    cm3value: "2000",
+    manufacturer: "Manufacturer year",
+    manuyear: "2019",
+    fueltype: "Fuel type",
+    fuel: "Diesel",
+  },
+  {
+    id: 5,
+    src: "/assest/s2.png",
+    title: "Volkswagen Polo 1.2 TDI ",
+    date: "Date Published: 12/10/2023",
+    price: "20,300 €",
+    discount: "20,300 €",
+    text: "+ Omregistrering",
+    vehicle: "Vehicle type",
+    vehicletype: "Sedan",
+    kw: "HP/kW",
+    kwvalue: "55/75",
+    gearbox: "Gearbox type",
+    gearboxtype: "Auto",
+    door: "Doors number",
+    doornumber: "4",
+    metertype: "kilometers",
+    meter: "185 000 km",
+    cm3: "cm3",
+    cm3value: "2000",
+    manufacturer: "Manufacturer year",
+    manuyear: "2019",
+    fueltype: "Fuel type",
+    fuel: "Diesel",
+  },
+  {
+    id: 6,
+    src: "/assest/s2.png",
+    title: "Volkswagen Polo 1.2 TDI ",
+    date: "Date Published: 12/10/2023",
+    price: "20,300 €",
+    discount: "20,300 €",
+    text: "+ Omregistrering",
+    vehicle: "Vehicle type",
+    vehicletype: "Sedan",
+    kw: "HP/kW",
+    kwvalue: "55/75",
+    gearbox: "Gearbox type",
+    gearboxtype: "Auto",
+    door: "Doors number",
+    doornumber: "4",
+    metertype: "kilometers",
+    meter: "185 000 km",
+    cm3: "cm3",
+    cm3value: "2000",
+    manufacturer: "Manufacturer year",
+    manuyear: "2019",
+    fueltype: "Fuel type",
+    fuel: "Diesel",
+  }
+]
+
 export default function ProductCard() {
   return (
     <div className="w-full ">
@@ -103,94 +256,98 @@ export default function ProductCard() {
           </div>
         </div>
         {/* /// Second cards /// */}
-        <div className="flex flex-col">
-          <div className="w-full lg:w-[818px] border border-[#EBEBEB]">
-            <div className="flex gap-1 p-2">
+        <div className="flex flex-col gap-5">
+         
+            {SecondCard.map((items,index) => (
+               <div key={items.id} className={`w-full lg:w-[818px] border border-[#EBEBEB] rounded-[8px] ${index===1 ? 'bg-secondary/20': 'bg-white'} ${index===3 ? 'bg-primary/20': 'bg-white'}  `}>
+               <div className="flex gap-1 p-2">
+                
               <div>
                 <Image
-                  className="rounded-t-[8px] w-full lg:w-[315px] h-[300px] object-cover"
-                  src="/assest/s2.png"
+                  className={` w-full lg:w-[315px] h-[300px] object-cover ${index===1 ? 'rounded-r-[8px]': 'rounded-[8px]' } `}
+                  src={items.src}
                   alt=""
                   width={500}
                   height={500}
+                  
                 />
               </div>
               <div className="flex flex-col gap-5 p-2">
                 <div className="flex justify-between items-center">
                   <div className="text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
-                    Volkswagen Polo 1.2 TDI
+                    {items.title}
                   </div>
                   <p className="text-[#444] text-sm pl-10">
-                    Date Published: 12/10/2023
+                    {items.date}
                   </p>
                 </div>
                 <div className="flex flex-col">
                   <div className="flex gap-5">
                     <p className="mb-2 text-xl font-bold text-secondary text-neutral-500 dark:text-neutral-300">
-                      20,300 €
+                      {items.price}
                     </p>
-                    <del>20,300 €</del>
+                    <del>{items.discount}</del>
                   </div>
-                  <p className="text-[#444] text-sm ">+ Omregistrering</p>
+                  <p className="text-[#444] text-sm ">{items.text}</p>
                 </div>
                 <div className="flex flex-col gap-3">
                   <div className="flex gap-7">
                     <div className="flex flex-col gap-3">
                       <div className="flex flex-col">
-                        <p className="text-[#444] text-xs">Vehicle type</p>
-                        <p className="text-[#444] font-bold text-base">Sedan</p>
+                        <p className="text-[#444] text-xs">{items.vehicle}</p>
+                        <p className="text-[#444] font-bold text-base">{items.vehicletype}</p>
                       </div>
                       <div className="flex flex-col">
-                        <p className="text-[#444] text-xs">HP/kW</p>
-                        <p className="text-[#444] font-bold text-base">55/75</p>
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-3">
-                      <div className="flex flex-col">
-                        <p className="text-[#444] text-xs">Gearbox type</p>
-                        <p className="text-[#444] font-bold text-base">Auto</p>
-                      </div>
-                      <div className="flex flex-col">
-                        <p className="text-[#444] text-xs">Doors number</p>
-                        <p className="text-[#444] font-bold text-base">4</p>
+                        <p className="text-[#444] text-xs">{items.kw}</p>
+                        <p className="text-[#444] font-bold text-base">{items.kwvalue}</p>
                       </div>
                     </div>
                     <div className="flex flex-col gap-3">
                       <div className="flex flex-col">
-                        <p className="text-[#444] text-xs">Kilometers</p>
+                        <p className="text-[#444] text-xs">{items.gearbox}</p>
+                        <p className="text-[#444] font-bold text-base">{items.gearboxtype}</p>
+                      </div>
+                      <div className="flex flex-col">
+                        <p className="text-[#444] text-xs">{items.door}</p>
+                        <p className="text-[#444] font-bold text-base">{items.doornumber}</p>
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-3">
+                      <div className="flex flex-col">
+                        <p className="text-[#444] text-xs">{items.meter}</p>
                         <p className="text-[#444] font-bold text-base">
-                          150,000 km
+                          {items.metertype}
                         </p>
                       </div>
                       <div className="flex flex-col">
-                        <p className="text-[#444] text-xs">cm3</p>
-                        <p className="text-[#444] font-bold text-base">2000</p>
+                        <p className="text-[#444] text-xs">{items.cm3}</p>
+                        <p className="text-[#444] font-bold text-base">{items.cm3value}</p>
                       </div>
                     </div>
                     <div className="flex flex-col gap-3">
                       <div className="flex flex-col">
-                        <p className="text-[#444] text-xs">Manufacture year</p>
-                        <p className="text-[#444] font-bold text-base">2019</p>
+                        <p className="text-[#444] text-xs">{items.manufacturer}</p>
+                        <p className="text-[#444] font-bold text-base">{items.manuyear}</p>
                       </div>
                       <div className="flex flex-col">
-                        <p className="text-[#444] text-xs">Fuel type</p>
+                        <p className="text-[#444] text-xs">{items.fueltype}</p>
                         <p className="text-[#444] font-bold text-base">
-                          Diesel
+                          {items.fuel}
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="flex justify-between pt-5">
-                  <div className="flex gap-2">
-                    <div className="flex justify-center items-center w-full lg:w-[83px] h-[31px] bg-primary rounded-[8px]">
-                      <p className="text-[#ffffff] text-xs">Damaged</p>
+                  <div className="flex gap-2 ">
+                    <div className="flex justify-center items-center w-full lg:w-[83px] h-[31px]  bg-primary/20 rounded-[8px]">
+                      <p className="text-primary text-xs font-medium">Damaged</p>
                     </div>
-                    <div className="flex justify-center items-center w-full lg:w-[112px] h-[31px] bg-primary rounded-[8px]">
-                      <p className="text-[#ffffff] text-xs">{`(Not)Registered`}</p>
+                    <div className="flex justify-center items-center w-full lg:w-[112px] h-[31px] bg-primary/20 rounded-[8px]">
+                      <p className="text-primary text-xs font-semibold">{`(Not)Registered`}</p>
                     </div>
-                    <div className="flex justify-center items-center w-full lg:w-[86px] h-[31px] bg-primary rounded-[8px]">
-                      <p className="text-[#ffffff] text-xs">Guarantee</p>
+                    <div className="flex justify-center items-center w-full lg:w-[86px] h-[31px] bg-primary/20 rounded-[8px]">
+                      <p className="text-primary text-xs font-semibold">Guarantee</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-1">
@@ -219,7 +376,10 @@ export default function ProductCard() {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
+            ))}
+           
+          
         </div>
       </div>
     </div>
