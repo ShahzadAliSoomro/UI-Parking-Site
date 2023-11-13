@@ -22,8 +22,8 @@ export default function CarCategory() {
 
   return (
     <div className="w-full">
-      <div className="flex flex-col justify-center items-center">
-        <div className="flex flex-col gap-5">
+      <div className="flex flex-col justify-center items-center ">
+        <div className="flex flex-col gap-5 flex-wrap lg:flex-nowrap">
           {/* //// first row /// */}
           <div className="flex gap-5">
             <div className="flex gap-2">

@@ -5,6 +5,7 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { BsStar } from "react-icons/bs";
 import { TbMessageDots } from "react-icons/tb";
 import { MdMenu, MdRestaurantMenu } from "react-icons/md";
+import Link from "next/link";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +59,8 @@ export default function Navbar() {
                   <option value="DE">Germany</option>
                 </select>
               </div>
-              <div>Nexs & Guides</div>
+              <div>
+               <Link href="/bookingdeshboard">Nexs & Guides</Link> </div>
               <div className="w-[82px] h-[40px] bg-secondary rounded-lg flex justify-center text-[#ffffff]">
                 <button>Sell</button>
               </div>
