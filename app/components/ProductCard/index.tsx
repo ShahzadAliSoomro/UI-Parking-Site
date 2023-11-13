@@ -262,9 +262,11 @@ export default function ProductCard() {
                <div key={items.id} className={`w-full lg:w-[818px] border border-[#EBEBEB] rounded-[8px] ${index===1 ? 'bg-secondary/20': 'bg-white'} ${index===3 ? 'bg-primary/20': 'bg-white'}  `}>
                <div className="flex gap-1 p-2">
                 
-              <div>
+                
+              <div >
+                
                 <Image
-                  className={` w-full lg:w-[315px] h-[300px] object-cover ${index===1 ? 'rounded-r-[8px]': 'rounded-[8px]' } `}
+                  className={`rounded-[8px] w-full lg:w-[315px]  h-[300px] object-cover  `}
                   src={items.src}
                   alt=""
                   width={500}
@@ -272,6 +274,7 @@ export default function ProductCard() {
                   
                 />
               </div>
+              
               <div className="flex flex-col gap-5 p-2">
                 <div className="flex justify-between items-center">
                   <div className="text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
