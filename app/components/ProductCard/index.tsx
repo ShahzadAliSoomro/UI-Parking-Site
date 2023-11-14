@@ -199,7 +199,7 @@ export default function ProductCard() {
       <div className="flex flex-col gap-5 p-5">
         {/* /// Forst three cards /// */}
         <div className="w-full lg:w-[866px]">
-          <div className="w-full flex gap-5">
+          <div className="w-full flex gap-5 flex-wrap lg:flex-nowrap">
             {FirstCard.map((item) => (
               <div
                 key={item.id}
@@ -260,7 +260,7 @@ export default function ProductCard() {
          
             {SecondCard.map((items,index) => (
                <div key={items.id} className={`w-full lg:w-[818px] border border-[#EBEBEB] rounded-[8px] ${index===1 ? 'bg-secondary/20': 'bg-white'} ${index===3 ? 'bg-primary/20': 'bg-white'}  `}>
-               <div className="flex gap-1 p-2">
+               <div className="flex gap-1 p-2 flex-wrap lg:flex-nowrap">
                 
                 
               <div >
@@ -276,11 +276,11 @@ export default function ProductCard() {
               </div>
               
               <div className="flex flex-col gap-5 p-2">
-                <div className="flex justify-between items-center">
-                  <div className="text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
+                <div className="flex justify-between items-center flex-wrap lg:flex-nowrap gap-3 lg:gap-0">
+                  <div className="lg:text-xl text-base font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
                     {items.title}
                   </div>
-                  <p className="text-[#444] text-sm pl-10">
+                  <p className="text-[#444] text-sm lg:pl-10 pl-0">
                     {items.date}
                   </p>
                 </div>
@@ -293,8 +293,8 @@ export default function ProductCard() {
                   </div>
                   <p className="text-[#444] text-sm ">{items.text}</p>
                 </div>
-                <div className="flex flex-col gap-3">
-                  <div className="flex gap-7">
+                <div className="flex flex-col lg:gap-3 gap-0">
+                  <div className="grid lg:grid-cols-4 grid-cols-1 lg:gap-7 gap-0 flex-wrap lg:flex-nowrap">
                     <div className="flex flex-col gap-3">
                       <div className="flex flex-col">
                         <p className="text-[#444] text-xs">{items.vehicle}</p>
@@ -341,8 +341,8 @@ export default function ProductCard() {
                     </div>
                   </div>
                 </div>
-                <div className="flex justify-between pt-5">
-                  <div className="flex gap-2 ">
+                <div className="flex justify-between flex-wrap lg:flex-nowrap gap-5 lg:gap-0 pt-5">
+                  <div className="flex gap-2 flex-wrap lg:flex-nowrap">
                     <div className="flex justify-center items-center w-full lg:w-[83px] h-[31px]  bg-primary/20 rounded-[8px]">
                       <p className="text-primary text-xs font-medium">Damaged</p>
                     </div>

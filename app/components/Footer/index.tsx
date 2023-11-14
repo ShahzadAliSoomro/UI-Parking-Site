@@ -14,12 +14,12 @@ export default function Footer() {
           {/* /// first section /// */}
           <div className="flex flex-col gap-5">
             <div>
-              <h1 className="text-2xl w-[400px]">
+              <h1 className="text-2xl w-full lg:w-[400px]">
                 The most wanted makes and models
               </h1>
             </div>
             <div className="flex flex-col gap-2">
-              <div className="flex gap-2">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 ">
                 <div className="w-[160px] h-[51px] bg-[#EF2C2E] rounded-lg flex justify-center text-white">
                   <button>Audi A4</button>
                 </div>
@@ -27,7 +27,7 @@ export default function Footer() {
                   <button>Volkswagen</button>
                 </div>
               </div>
-              <div className="flex gap-2">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-2">
                 <div className="w-[160px] h-[51px] bg-[#EF2C2E] rounded-lg flex justify-center text-white">
                   <button>Skoda Octavia</button>
                 </div>
@@ -35,7 +35,7 @@ export default function Footer() {
                   <button>BMW 5 Series</button>
                 </div>
               </div>
-              <div className="flex gap-2">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-2">
                 <div className="w-[160px] h-[51px] bg-[#EF2C2E] rounded-lg flex justify-center text-white">
                   <button>Fiant Punto</button>
                 </div>
