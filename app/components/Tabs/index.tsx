@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import CarCategory from "../FieldCategorys/CarCategory";
 
 const TabPanel = ({ activeTab, index, children }: any) => {
-  return activeTab === index && <div className="bg-[#ffffff]">{children}</div>;
+  return activeTab === index && <div className="bg-[#ffffff] w-full">{children}</div>;
 };
 
 export default function Tabs() {
@@ -96,7 +96,7 @@ export default function Tabs() {
 
   return (
     <div className="w-full flex flex-col justify-center items-center pb-10 relative">
-        <div className="absolute lg:-top-[200px] -top-[200px] left-5 right-5 ">
+        <div className="absolute lg:-top-[200px] -top-[200px]">
             <div className="w-full bg-[#EBEBEB] shadow-xl rounded-[8px] lg:w-[1160px]">
             <div className="">
                 <ul className="flex justify-between ">
