@@ -8,7 +8,7 @@ import {GoDotFill} from "react-icons/go"
 
 export default function Footer() {
   return (
-    <div className="w-full bg-primary text-[#FFFFFF] lg:mt-[450px] mt-0">
+    <div className="w-full bg-primary text-[#FFFFFF] mt-[450px]">
       <div className="container mx-auto w-full lg:w-[1160px] p-5">
         <div className="flex justify-between gap-8 lg:gap-0 flex-wrap lg:flex-nowrap pt-5">
           {/* /// first section /// */}

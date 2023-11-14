@@ -96,15 +96,15 @@ export default function Tabs() {
 
   return (
     <div className="w-full flex flex-col justify-center items-center pb-10 relative">
-        <div className="absolute -top-[200px]">
+        <div className="absolute lg:-top-[200px] -top-[200px] left-5 right-5 ">
             <div className="w-full bg-[#EBEBEB] shadow-xl rounded-[8px] lg:w-[1160px]">
             <div className="">
-                <ul className="flex justify-between">
+                <ul className="flex justify-between ">
         
         {[0, 1, 2, 3, 4, 5].map((index) => (
           <li
             key={index}
-            className={`cursor-pointer w-full p-2  ${
+            className={`cursor-pointer w-full p-2 ${
               activeTab === index ? "bg-[#FFFFFF] text-secondary flex justify-center items-center" : ""
             }`}
             onClick={() => {
@@ -113,14 +113,14 @@ export default function Tabs() {
               }}
           
           >
-            <span className={`flex justify-center items-center`}>
+            <span className={`flex justify-center items-center flex-wrap lg:flex-nowrap `}>
                 {tabIcons [index]} {/* Display the corresponding icon */}
             </span>
             
           </li>
         ))}
       </ul>
-            </div>
+            
       
       {[0, 1, 2, 3, 4, 5].map((index) => (
         <TabPanel key={index} activeTab={activeTab} index={index}>
@@ -129,6 +129,7 @@ export default function Tabs() {
         </TabPanel>
       ))}
       </div>
+        </div>
         </div>
         
     </div>
