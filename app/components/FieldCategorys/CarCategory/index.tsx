@@ -20,15 +20,15 @@ export default function CarCategory() {
 
   return (
     <div className="w-full">
-      <div className="flex flex-col justify-center items-center ">
+      <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col gap-5 ">
           {/* //// first row /// */}
-          <div className="flex flex-col md:flex-row gap-5 justify-center items-center">
-            <div className="flex flex-col md:flex-row gap-2 ">
+          <div className="flex flex-col lg:flex-row gap-5 justify-center items-center">
+            <div className="flex flex-col lg:flex-row gap-2 ">
               <div className="">
                 <select
                   data-te-select-init
-                  className="border-[#EBEBEB] border-2 rounded-[8px] text-[#444] w-[390px] lg:w-[210px] h-[52px] px-2"
+                  className="border-[#EBEBEB] border-2 rounded-[8px] text-[#444] w-[346px] lg:w-[210px] h-[52px] px-2"
                 >
                   <option value="1">Make</option>
                   <option value="2">Two</option>
@@ -66,7 +66,7 @@ export default function CarCategory() {
                 <button className="">Add another vehicle</button>
               </div>
             </div>
-            <div className="flex items-center justify-center gap-1 w-full lg:w-[229px] bg-secondary text-[#FFFFFF] h-[52px] rounded-[8px]">
+            <div className="flex items-center justify-center gap-1 w-[346px] lg:w-[229px] bg-secondary text-[#FFFFFF] h-[52px] rounded-[8px]">
               <CiSearch className="text-[#FFFFFF] w-4 h-4" />
 
               <button className="">5.221.456 results</button>
@@ -75,7 +75,7 @@ export default function CarCategory() {
           {/* //// second row /// */}
           <div className="flex flex-col lg:flex-row gap-5 justify-center items-center">
             <div className="flex flex-col lg:flex-row gap-2">
-              <div className="flex justify-between items-center px-4 w-[390px] lg:w-[154px] h-[52px] border-[#EBEBEB] border-2 rounded-[8px]">
+              <div className="flex justify-between items-center px-4 w-[346px] lg:w-[154px] h-[52px] border-[#EBEBEB] border-2 rounded-[8px]">
                 <button className="text-[#444]">Price from</button>
                 <span className="text-[#444]">€</span>
               </div>
@@ -130,18 +130,18 @@ export default function CarCategory() {
               </div>
             </div>
             <div className="flex">
-              <button className="w-[390px] lg:w-[229px] h-[52px] border-2 border-[#EBEBEB] rounded-[8px] text-[#444]">
+              <button className="w-[346px] lg:w-[229px] h-[52px] border-2 border-[#EBEBEB] rounded-[8px] text-[#444]">
                 Save Search
               </button>
             </div>
           </div>
           {/* //// third row /// */}
-          <div className="flex flex-col md:flex-row gap-5 justify-center items-center">
-            <div className="flex flex-col md:flex-row gap-2 justify-center items-center">
+          <div className="flex flex-col lg:flex-row gap-5 justify-center items-center">
+            <div className="flex flex-col lg:flex-row gap-2 justify-center items-center">
               <div className="">
                 <select
                   data-te-select-init
-                  className="border-[#EBEBEB] border-2 rounded-[8px] text-[#444] w-[390px] lg:w-[152px] h-[52px] px-2"
+                  className="border-[#EBEBEB] border-2 rounded-[8px] text-[#444] w-[346px] lg:w-[152px] h-[52px] px-2"
                 >
                   <option value="1">Fuel type</option>
                   <option value="2">Two</option>
@@ -153,7 +153,7 @@ export default function CarCategory() {
                   <option value="8">Eight</option>
                 </select>
               </div>
-              <div className="flex  justify-between items-center w-full lg:w-[465px] px-5 h-[52px] border-2 border-[#EBEBEB] rounded-[8px] relative">
+              <div className="flex  justify-between items-center w-[346px] lg:w-[465px] px-5 h-[52px] border-2 border-[#EBEBEB] rounded-[8px] relative">
                 <div className="text-[#444]">Payment type</div>
                 <div className="flex justify-center mr-5 items-center w-[170px] h-[52px] bg-secondary rounded-[8px]">
                   Buy
@@ -167,7 +167,7 @@ export default function CarCategory() {
             <div className="">
               <select
                 data-te-select-init
-                className="border-[#EBEBEB] border-2 rounded-[8px] text-[#444] w-[390px] lg:w-[229px] h-[52px] px-2"
+                className="border-[#EBEBEB] border-2 rounded-[8px] text-[#444] w-[346px] lg:w-[229px] h-[52px] px-2"
               >
                 <option value="1">Close filters</option>
                 <option value="2">Two</option>
@@ -184,8 +184,8 @@ export default function CarCategory() {
           <div className="w-full lg:w-[1068px] pt-5 h-[1px] border-[#EBEBEB] border-b-2"></div>
 
           {/* /// fourth row /// */}
-          <div className="flex flex-col md:flex-row gap-5 justify-center items-center">
-            <div className="flex flex-col md:flex-row gap-2">
+          <div className="flex flex-col lg:flex-row gap-5 justify-center items-center">
+            <div className="flex flex-col lg:flex-row gap-2">
               {/* /// number of seats /// */}
               <div className="flex flex-col gap-2 ">
                 <p className="text-[#444] font-bold">Number of seats</p>
@@ -194,7 +194,7 @@ export default function CarCategory() {
                     {/* Dropdown button */}
                     <div
                       onClick={() => setIsFrom(!isFrom)}
-                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[190px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
+                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[170px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
                     >
                       <div className="pl-3">From</div>
                       <div className="flex justify-center items-center w-[40px] h-[50px] bg-[#EBEBEB] text-[#444]">
@@ -216,7 +216,7 @@ export default function CarCategory() {
                     {/* Dropdown button */}
                     <div
                       onClick={() => setIsOpen(!isOpen)}
-                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[190px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
+                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[170px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
                     >
                       <div className="pl-3">To</div>
                       <div className="flex justify-center items-center w-[40px] h-[50px] bg-[#EBEBEB] text-[#444]">
@@ -243,7 +243,7 @@ export default function CarCategory() {
                     {/* Dropdown button */}
                     <div
                       onClick={() => setIsNumber(!isNumber)}
-                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[390px] lg:w-[260px] h-[52px] text-[#444] cursor-pointer"
+                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[346px] lg:w-[260px] h-[52px] text-[#444] cursor-pointer"
                     >
                       <div className="pl-3">4</div>
                       <div className="flex justify-center items-center w-[40px] h-[50px] bg-[#EBEBEB] text-[#444]">
@@ -253,7 +253,7 @@ export default function CarCategory() {
 
                     {/* Dropdown content */}
                     {isNumber && (
-                      <div className="absolute mt-2 w-[390px] lg:w-[226px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
+                      <div className="absolute mt-2 w-[346px] lg:w-[226px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
                         <div className="px-3 py-2">Item 1</div>
                         <div className="px-3 py-2">Item 2</div>
                         <div className="px-3 py-2">Item 3</div>
@@ -271,7 +271,7 @@ export default function CarCategory() {
                     {/* Dropdown button */}
                     <div
                       onClick={() => setIsCondition(!isCondition)}
-                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[390px] lg:w-[260px] h-[52px] text-[#444] cursor-pointer"
+                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[346px] lg:w-[260px] h-[52px] text-[#444] cursor-pointer"
                     >
                       <div className="pl-3">Any</div>
                       <div className="flex justify-center items-center w-[40px] h-[50px] bg-[#EBEBEB] text-[#444]">
@@ -299,7 +299,7 @@ export default function CarCategory() {
                     {/* Dropdown button */}
                     <div
                       onClick={() => setIsPowerFrom(!isPowerFrom)}
-                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[190px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
+                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[170px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
                     >
                       <div className="pl-3">From</div>
                       <div className="flex justify-center items-center w-[40px] h-[50px] bg-[#EBEBEB] text-[#444]">
@@ -309,7 +309,7 @@ export default function CarCategory() {
 
                     {/* Dropdown content */}
                     {isPowerFrom && (
-                      <div className="absolute mt-2 w-[190px] lg:w-[126px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
+                      <div className="absolute mt-2 w-[170px] lg:w-[126px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
                         <div className="px-3 py-2">Item 1</div>
                         <div className="px-3 py-2">Item 2</div>
                         <div className="px-3 py-2">Item 3</div>
@@ -321,7 +321,7 @@ export default function CarCategory() {
                     {/* Dropdown button */}
                     <div
                       onClick={() => setIsPowerTo(!isPowerTo)}
-                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[190px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
+                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[170px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
                     >
                       <div className="pl-3">up to</div>
                       <div className="flex justify-center items-center w-[40px] h-[50px] bg-[#EBEBEB] text-[#444]">
@@ -331,7 +331,7 @@ export default function CarCategory() {
 
                     {/* Dropdown content */}
                     {isPowerTo && (
-                      <div className="absolute mt-2 w-[190px] lg:w-[126px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
+                      <div className="absolute mt-2 w-[170px] lg:w-[126px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
                         <div className="px-3 py-2">Item 1</div>
                         <div className="px-3 py-2">Item 2</div>
                         <div className="px-3 py-2">Item 3</div>
@@ -344,8 +344,8 @@ export default function CarCategory() {
           </div>
 
           {/* /// Five row /// */}
-          <div className="flex flex-col md:flex-row gap-5 justify-center items-center">
-            <div className="flex flex-col md:flex-row gap-2 ">
+          <div className="flex flex-col lg:flex-row gap-5 justify-center items-center">
+            <div className="flex flex-col lg:flex-row gap-2 ">
               {/* //// Duration Dropdown /// */}
               <div className="flex flex-col gap-2">
                 <p className="text-[#444] font-bold">Leasing Duration</p>
@@ -354,7 +354,7 @@ export default function CarCategory() {
                     {/* Dropdown button */}
                     <div
                       onClick={() => setIsDuration(!isDuration)}
-                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[190px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
+                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[170px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
                     >
                       <div className="pl-3">From</div>
                       <div className="flex justify-center items-center w-[40px] h-[50px] bg-[#EBEBEB] text-[#444]">
@@ -364,7 +364,7 @@ export default function CarCategory() {
 
                     {/* Dropdown content */}
                     {isDuration && (
-                      <div className="absolute mt-2 w-[190px] lg:w-[126px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
+                      <div className="absolute mt-2 w-[170px] lg:w-[126px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
                         <div className="px-3 py-2">Item 1</div>
                         <div className="px-3 py-2">Item 2</div>
                         <div className="px-3 py-2">Item 3</div>
@@ -376,7 +376,7 @@ export default function CarCategory() {
                     {/* Dropdown button */}
                     <div
                       onClick={() => setIsDurationTo(!isDurationTo)}
-                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[190px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
+                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[170px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
                     >
                       <div className="pl-3">To</div>
                       <div className="flex justify-center items-center w-[40px] h-[50px] bg-[#EBEBEB] text-[#444]">
@@ -386,7 +386,7 @@ export default function CarCategory() {
 
                     {/* Dropdown content */}
                     {isDurationTo && (
-                      <div className="absolute mt-2 w-[190px] lg:w-[126px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
+                      <div className="absolute mt-2 w-[170px] lg:w-[126px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
                         <div className="px-3 py-2">Item 1</div>
                         <div className="px-3 py-2">Item 2</div>
                         <div className="px-3 py-2">Item 3</div>
@@ -403,7 +403,7 @@ export default function CarCategory() {
                     {/* Dropdown button */}
                     <div
                       onClick={() => setIsYear(!isYear)}
-                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[190px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
+                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[170px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
                     >
                       <div className="pl-3">From</div>
                       <div className="flex justify-center items-center w-[40px] h-[50px] bg-[#EBEBEB] text-[#444]">
@@ -413,7 +413,7 @@ export default function CarCategory() {
 
                     {/* Dropdown content */}
                     {isYear && (
-                      <div className="absolute mt-2 w-[190px] lg:w-[126px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
+                      <div className="absolute mt-2 w-[170px] lg:w-[126px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
                         <div className="px-3 py-2">Item 1</div>
                         <div className="px-3 py-2">Item 2</div>
                         <div className="px-3 py-2">Item 3</div>
@@ -425,7 +425,7 @@ export default function CarCategory() {
                     {/* Dropdown button */}
                     <div
                       onClick={() => setIsYearTo(!isYearTo)}
-                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[190px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
+                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[170px] lg:w-[126px] h-[52px] text-[#444] cursor-pointer"
                     >
                       <div className="pl-3">To</div>
                       <div className="flex justify-center items-center w-[40px] h-[50px] bg-[#EBEBEB] text-[#444]">
@@ -435,7 +435,7 @@ export default function CarCategory() {
 
                     {/* Dropdown content */}
                     {isYearTo && (
-                      <div className="absolute mt-2 w-[190px] lg:w-[126px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
+                      <div className="absolute mt-2 w-[170px] lg:w-[126px] bg-[#ffffff] text-primary rounded-[8px] border-2 border-[#EBEBEB]">
                         <div className="px-3 py-2">Item 1</div>
                         <div className="px-3 py-2">Item 2</div>
                         <div className="px-3 py-2">Item 3</div>
@@ -452,7 +452,7 @@ export default function CarCategory() {
                     {/* Dropdown button */}
                     <div
                       onClick={() => setIsVehicle(!isVehicle)}
-                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[390px] lg:w-[260px] h-[52px] text-[#444] cursor-pointer"
+                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[346px] lg:w-[260px] h-[52px] text-[#444] cursor-pointer"
                     >
                       <div className="pl-3">Home plates</div>
                       <div className="flex justify-center items-center w-[40px] h-[50px] bg-[#EBEBEB] text-[#444]">
@@ -480,7 +480,7 @@ export default function CarCategory() {
                     {/* Dropdown button */}
                     <div
                       onClick={() => setIsOwnership(!isOwnership)}
-                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[390px] lg:w-[260px] h-[52px] text-[#444] cursor-pointer"
+                      className="flex justify-between items-center border-2 border-[#EBEBEB] rounded-[8px] w-[346px] lg:w-[260px] h-[52px] text-[#444] cursor-pointer"
                     >
                       <div className="pl-3"></div>
                       <div className="flex justify-center items-center w-[40px] h-[50px] bg-[#EBEBEB] text-[#444]">

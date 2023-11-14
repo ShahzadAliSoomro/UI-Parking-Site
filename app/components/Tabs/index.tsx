@@ -95,9 +95,9 @@ export default function Tabs() {
   ];
 
   return (
-    <div className="w-full flex flex-col justify-center items-center pb-10 relative">
+    <div className="w-full flex flex-col justify-center items-center pb-10 relative ">
         <div className="absolute lg:-top-[200px] -top-[200px]">
-            <div className="w-full bg-[#EBEBEB] shadow-xl rounded-[8px] lg:w-[1160px]">
+            <div className="w-[360px] bg-[#EBEBEB] shadow-xl rounded-[8px] lg:w-[1160px] ">
             <div className="">
                 <ul className="flex justify-between ">
         
@@ -113,7 +113,7 @@ export default function Tabs() {
               }}
           
           >
-            <span className={`flex justify-center items-center flex-wrap lg:flex-nowrap `}>
+            <span className={`flex justify-center items-center`}>
                 {tabIcons [index]} {/* Display the corresponding icon */}
             </span>
             
@@ -125,7 +125,7 @@ export default function Tabs() {
       {[0, 1, 2, 3, 4, 5].map((index) => (
         <TabPanel key={index} activeTab={activeTab} index={index}>
           {/* Content for Tab {index + 1} */}
-          <p className="p-5 bg-[#ffffff] shadow-xl rounded-[8px] text-[#FFFFFF]"><CarCategory /> {index + 1}</p>
+          <p className="p-5  bg-[#ffffff] shadow-xl rounded-[8px] text-[#FFFFFF]"><CarCategory /> {index + 1}</p>
         </TabPanel>
       ))}
       </div>
