@@ -34,7 +34,7 @@ export default function Navbar() {
             />
           </div>
            {/* /// Mobile button /// */}
-           <div className="md:hidden">
+           <div className="md:hidden flex justify-center">
            <button onClick={handleClick}>{menuIcon}</button>
           </div>
 
