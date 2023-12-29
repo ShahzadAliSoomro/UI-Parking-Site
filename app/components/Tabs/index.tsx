@@ -93,7 +93,6 @@ export default function Tabs() {
     </defs>
   </svg>,
   ];
-
   return (
     <div className="w-full flex flex-col justify-center items-center pb-10 relative ">
         <div className="absolute lg:-top-[200px] -top-[200px]">

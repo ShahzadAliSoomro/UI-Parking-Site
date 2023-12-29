@@ -23,7 +23,6 @@ export default function Navbar() {
        
 
         <div className="flex justify-between p-5">
-            
           <div>
             <Image
               src="/assest/logo.png"
